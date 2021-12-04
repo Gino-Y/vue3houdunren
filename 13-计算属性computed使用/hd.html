@@ -9,14 +9,9 @@
 </head>
 <body>
     <div id='app'>
+        {{error}}
         <button @click="desc">减少</button>{{num}}<button @click="add">增加</button>
         <div style="background-color:red; color:white;" v-if="error">提示：{{error}}</div>
-        <!-- 两种写法相同 -->
-        <!-- <div v-on:click="add">{{name}}</div> -->
-        <!-- <div @click="add">{{name}}</div> -->
-        <!-- <div @[event]="add">{{name}}</div> -->
-        <!-- <a href='https://www.houdunren.com' @click.prevent='go("向军")'>{{name}}</a> -->
-        <!-- <a href='https://www.houdunren.com' @click.prevent='go($event,"向军")'>{{name}}</a> -->
     </div>
     <script src='hd.js'></script>
 </body>
