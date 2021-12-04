@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdn.bootcdn.net/ajax/libs/vue/3.2.0-beta.7/vue.global.prod.js'></script>
+    <title>Gino</title>
+</head>
+<body>
+    <div id='app'>
+        <!-- 冒号等同v-bind: -->
+        <div v-bind:id="id">{{name}}</div>
+        <div :id="id">{{name}}</div>
+    </div>
+    <script src='hd.js'></script>
+</body>
+</html>
